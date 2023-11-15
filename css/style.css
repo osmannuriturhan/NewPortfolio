@@ -146,11 +146,107 @@
 }
 
 .projects {
-  width: 100%;
+  margin: 1rem 1rem;
+  width: calc(100% - 1rem);
+  display: grid;
+  grid-template-columns: 3fr 4fr 4fr;
+  grid-template-areas:
+    "project-card  project-icon-main project-icon-main"
+    "project-card  bottom1 bottom1";
+  gap: 1rem;
 }
 
+.project-card {
+  margin-top: 3.9rem;
+  margin-left: 1rem;
+  grid-area: project-card;
+  max-height: 500px;
+  box-shadow: 1px 1px 5px 1px #9ea5ac;
+}
+
+.project-icon-main {
+  grid-area: project-icon-main;
+}
+
+.card {
+  background-color: #335474 !important;
+  background-image: linear-gradient(
+    180deg,
+    #335474 0%,
+    #132c48 50%,
+    #142d49 100%
+  ) !important;
+  padding: 10px 0 0 0 !important;
+}
+
+.card-text {
+  background-color: white;
+}
+
+.bottom1 {
+  display: flex;
+  grid-area: bottom1;
+  justify-content: space-evenly;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "comment about"; */
+}
+
+.comment {
+  width: 100%;
+  overflow-y: auto;
+  max-height: 192px;
+}
+
+.comment::-webkit-scrollbar {
+  display: none;
+}
+
+.about {
+  width: 100%;
+  max-height: 192px;
+}
+
+.about-box {
+  box-shadow: 1px 1px 5px 1px #9ea5ac;
+}
+
+.baslik {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10rem;
+}
+
+.baslik1 {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+  padding-top: 4rem;
+}
+
+.baslik1 h1 {
+  padding: 0 50px;
+  border-bottom: 2px solid #142d49;
+}
+
+.baslik2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding-top: 4rem;
+}
+
+.baslik2 h1 {
+  padding: 0 50px;
+  border-bottom: 2px solid #142d49;
+}
 
 .gtco-testimonials {
+  width: 100%;
+  overflow: hidden;
   position: relative;
   margin-top: 30px;
 }
@@ -310,4 +406,8 @@
     font-size: 20px;
     gap: 15px;
   }
+}
+
+.osman {
+  border-radius: 100%;
 }
