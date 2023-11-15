@@ -1,1 +1,1 @@
-NewPortfolio --> https://osmannuriturhan.github.io/NewPortfolio/
+NewPortfolio --> 
