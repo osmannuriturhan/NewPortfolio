@@ -164,6 +164,34 @@
   box-shadow: 1px 1px 5px 1px #9ea5ac;
 }
 
+.project-card img {
+  width: 100%;
+  height: 50%;
+  border-radius: 6px 6px 0 0;
+}
+
+.project-card h5 {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #142d49;
+  text-align: center;
+}
+
+.project-card p {
+  padding: 10px;
+  color: #142d49;
+  text-align: center;
+}
+
+.project-card .btn2 {
+  padding: 5px 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #1e429f;
+  color: white;
+}
+
 .project-icon-main {
   grid-area: project-icon-main;
 }
@@ -183,28 +211,71 @@
   background-color: white;
 }
 
+.card a {
+  display: none;
+}
+
 .bottom1 {
   display: flex;
   grid-area: bottom1;
   justify-content: space-evenly;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "comment about"; */
+  gap: 10px;
 }
 
-.comment {
+.Comment {
   width: 100%;
   overflow-y: auto;
-  max-height: 192px;
+  max-height: 250px;
 }
 
 .comment::-webkit-scrollbar {
   display: none;
 }
 
+.Comment {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 8px 30px -7px #c9dff0;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.texting {
+  margin-left: 50px;
+}
+
+.texting p {
+  word-wrap: break-word; /* Breaks long words to prevent horizontal scrolling /
+  white-space: normal; / Allows the text to wrap to the next line /
+  max-width: 100%; / Ensures the text does not exceed its container width */
+}
+
+.star {
+  font-size: 30px;
+  cursor: pointer;
+  color: grey;
+}
+
+.star:hover {
+  color: gold;
+}
+
+.star.selected {
+  color: gold;
+}
+
 .about {
   width: 100%;
-  max-height: 192px;
+  max-height: 250px;
+  margin-right: 10px;
 }
 
 .about-box {
@@ -333,7 +404,7 @@
   transition: all 0.3s;
 }
 
-.gtco-testimonials .center {
+.gtco-testimonials .owl-item {
   opacity: 1;
 }
 
@@ -410,4 +481,26 @@
 
 .osman {
   border-radius: 100%;
+}
+
+.star {
+  font-size: 30px;
+  cursor: pointer;
+  color: grey;
+}
+
+.star:hover {
+  color: gold;
+}
+
+.star.selected {
+  color: gold;
+}
+
+.post-btn {
+  background-color: #01b0f8;
+  color: white;
+  border: 3px solid #01b0f8;
+  padding: 5px 8px;
+  border-radius: 50px;
 }
